@@ -105,21 +105,22 @@ glm::vec3 Light1 = glm::vec3(0);
 //float rotBall = 0;
 //bool AnimBall = false;
 //bool step = false;
-//Sol
+//Sol y Nube
 float movSol = 0;
 bool AnimSol = true;
-////Nube
-//bool AnimNube = false;
-////Pelota
-//bool AnimPelota = false;
-////PuertaDercha
-//bool AnimPuertaD = false;
-////PuertaIzquierda
-//bool AnimPuertaI= false;
-////Aspas
-//bool AnimAspas = false;
-//
-////Anim Complejas
+//Pelota
+float movPelota = 0;
+bool AnimPelota = false;
+//Aspas
+float rotAspas = 0.0f;
+bool AnimAspas = false;
+//PuertaDercha
+float movPuertaD = 0;
+bool AnimPuertaD = false;
+//PuertaIzquierda
+float movPuertaI = 0;
+bool AnimPuertaI = false;
+//Anim Complejas
 ////Personaje Puppet
 //bool AnimBall = false;
 ////Personaje Bunnie
@@ -341,8 +342,8 @@ int main()
 		Sol.Draw(lightingShader);
 		//Nube
 		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(0.0f, -movSol, 0.0f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
 		Nube.Draw(lightingShader);
 		//Bocina
@@ -353,7 +354,7 @@ int main()
 		Bocina.Draw(lightingShader);
 		////Pelota
 		model = glm::mat4(1);
-		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
+		model = glm::translate(model, glm::vec3(0.0f, movPelota, 0.0f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
 		Pelota.Draw(lightingShader);
@@ -377,13 +378,13 @@ int main()
 		Vaso.Draw(lightingShader);
 		//PuertaDerecha
 		model = glm::mat4(1);
-		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
+		model = glm::translate(model, glm::vec3(0.0f, 0.0f, movPuertaD));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
 		PuertaDerecha.Draw(lightingShader);
 		//PuertaIzquierda
 		model = glm::mat4(1);
-		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
+		model = glm::translate(model, glm::vec3(0.0f, 0.0f, movPuertaI));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
 		PuertaIzquierda.Draw(lightingShader);
@@ -395,7 +396,7 @@ int main()
 		Ventilador.Draw(lightingShader);
 		//Aspas
 		model = glm::mat4(1);
-		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
+		model = glm::rotate(model, glm::radians(rotAspas), glm::vec3(0.0f, 0.0f, 1.0f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
 		Aspas.Draw(lightingShader);
@@ -599,31 +600,93 @@ void KeyCallback(GLFWwindow* window, int key, int scancode, int action, int mode
 			Light1 = glm::vec3(0);//Cuado es solo un valor en los 3 vectores pueden dejar solo una componente
 		}
 	}
-	if (keys[GLFW_KEY_N])
+	//Activar Ventilador
+	if (key == GLFW_KEY_V && action == GLFW_PRESS)
 	{
-		AnimSol = !AnimSol;
+		AnimAspas = !AnimAspas;
+	}
 
+	//Activar PuertaDerecha
+	if (key == GLFW_KEY_P && action == GLFW_PRESS)
+	{
+		AnimPuertaD = !AnimPuertaD;
+	}
+
+	//Activar PuertaIzquierda
+	if (key == GLFW_KEY_O && action == GLFW_PRESS)
+	{
+		AnimPuertaI = !AnimPuertaI;
 	}
 }
 void Animation() {
+	//Sol y Nubes
 	if (AnimSol)
 	{
 		movSol += 0.01f;
-		//printf("%f", rotBall);
 	}
 	else
 	{
 		movSol -= 0.01f;
 	}
-	if (movSol >= 0.8f)
+	if (movSol >= 0.6f)
 	{
 		AnimSol = false;
 	}
-
 	// límite inferior
 	if (movSol <= 0.0f)
 	{
 		AnimSol = true;
+	}
+
+	// Pelota
+	if (AnimPelota)
+	{
+		movPelota += 0.02f;
+	}
+	else
+	{
+		movPelota -= 0.03f;
+	}
+
+	// límite arriba
+	if (movPelota >= 3.0f)
+	{
+		AnimPelota = false;
+	}
+
+	// límite abajo
+	if (movPelota <= 0.0f)
+	{
+		AnimPelota = true;
+	}
+	// Aspas ventilador
+	if (AnimAspas)
+	{
+		rotAspas += 0.01f;
+	}
+
+	//Puerta Derecha
+	// abrir
+	if (AnimPuertaD && movPuertaD < 3.0f)
+	{
+		movPuertaD += 0.01f;
+	}
+	// cerrar
+	if (!AnimPuertaD && movPuertaD > 0.0f)
+	{
+		movPuertaD -= 0.01f;
+	}
+
+	//Puerta Derecha
+	// abrir
+	if (AnimPuertaI && movPuertaI < 3.0f)
+	{
+		movPuertaI += 0.01f;
+	}
+	// cerrar
+	if (!AnimPuertaI && movPuertaI > 0.0f)
+	{
+		movPuertaI -= 0.01f;
 	}
 }
 
