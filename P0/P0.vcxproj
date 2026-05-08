@@ -92,12 +92,12 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\External Libraries\glm;C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\External Libraries\GLEW\include;C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\External Libraries\assimp\include;C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\External Libraries\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\pc\source\repos\PF-CG-FNaF\External Libraries\glm;C:\Users\pc\source\repos\PF-CG-FNaF\External Libraries\assimp\include;C:\Users\pc\source\repos\PF-CG-FNaF\External Libraries\GLEW\include;C:\Users\pc\source\repos\PF-CG-FNaF\External Libraries\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\External Libraries\GLEW\lib\Release\Win32;C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\External Libraries\GLFW\lib-vc2015;C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\External Libraries\SOIL2\lib;C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\External Libraries\assimp\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\pc\source\repos\PF-CG-FNaF\External Libraries\GLEW\lib\Release\Win32;C:\Users\pc\source\repos\PF-CG-FNaF\External Libraries\GLFW\lib-vc2015;C:\Users\pc\source\repos\PF-CG-FNaF\External Libraries\SOIL2\lib;C:\Users\pc\source\repos\PF-CG-FNaF\External Libraries\assimp\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3.lib;assimp-vc140-mt.lib;soil2-debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -110,12 +110,12 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\External Libraries\glm;C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\External Libraries\GLEW\include;C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\External Libraries\assimp\include;C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\External Libraries\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\pc\source\repos\PF-CG-FNaF\External Libraries\glm;C:\Users\pc\source\repos\PF-CG-FNaF\External Libraries\assimp\include;C:\Users\pc\source\repos\PF-CG-FNaF\External Libraries\GLEW\include;C:\Users\pc\source\repos\PF-CG-FNaF\External Libraries\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\External Libraries\GLEW\lib\Release\Win32;C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\External Libraries\GLFW\lib-vc2015;C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\External Libraries\SOIL2\lib;C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\External Libraries\assimp\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\pc\source\repos\PF-CG-FNaF\External Libraries\GLEW\lib\Release\Win32;C:\Users\pc\source\repos\PF-CG-FNaF\External Libraries\GLFW\lib-vc2015;C:\Users\pc\source\repos\PF-CG-FNaF\External Libraries\SOIL2\lib;C:\Users\pc\source\repos\PF-CG-FNaF\External Libraries\assimp\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3.lib;assimp-vc140-mt.lib;soil2-debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -126,12 +126,12 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\External Libraries\glm;C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\External Libraries\GLEW\include;C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\External Libraries\assimp\include;C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\External Libraries\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\pc\source\repos\PF-CG-FNaF\External Libraries\glm;C:\Users\pc\source\repos\PF-CG-FNaF\External Libraries\assimp\include;C:\Users\pc\source\repos\PF-CG-FNaF\External Libraries\GLEW\include;C:\Users\pc\source\repos\PF-CG-FNaF\External Libraries\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\External Libraries\GLEW\lib\Release\Win32;C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\External Libraries\GLFW\lib-vc2015;C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\External Libraries\SOIL2\lib;C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\External Libraries\assimp\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\pc\source\repos\PF-CG-FNaF\External Libraries\GLEW\lib\Release\Win32;C:\Users\pc\source\repos\PF-CG-FNaF\External Libraries\GLFW\lib-vc2015;C:\Users\pc\source\repos\PF-CG-FNaF\External Libraries\SOIL2\lib;C:\Users\pc\source\repos\PF-CG-FNaF\External Libraries\assimp\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3.lib;assimp-vc140-mt.lib;soil2-debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -144,12 +144,12 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\External Libraries\glm;C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\External Libraries\GLEW\include;C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\External Libraries\assimp\include;C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\External Libraries\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\pc\source\repos\PF-CG-FNaF\External Libraries\glm;C:\Users\pc\source\repos\PF-CG-FNaF\External Libraries\assimp\include;C:\Users\pc\source\repos\PF-CG-FNaF\External Libraries\GLEW\include;C:\Users\pc\source\repos\PF-CG-FNaF\External Libraries\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\External Libraries\GLEW\lib\Release\Win32;C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\External Libraries\GLFW\lib-vc2015;C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\External Libraries\SOIL2\lib;C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\External Libraries\assimp\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\pc\source\repos\PF-CG-FNaF\External Libraries\GLEW\lib\Release\Win32;C:\Users\pc\source\repos\PF-CG-FNaF\External Libraries\GLFW\lib-vc2015;C:\Users\pc\source\repos\PF-CG-FNaF\External Libraries\SOIL2\lib;C:\Users\pc\source\repos\PF-CG-FNaF\External Libraries\assimp\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3.lib;assimp-vc140-mt.lib;soil2-debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
