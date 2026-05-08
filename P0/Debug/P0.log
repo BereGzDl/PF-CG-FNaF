@@ -1,0 +1,24 @@
+﻿  ProyectoFinalFNAF.cpp
+C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\P0\ProyectoFinalFNAF.cpp(239,24): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\P0\ProyectoFinalFNAF.cpp(279,20): warning C4244: '=': conversión de 'double' a 'T'; posible pérdida de datos
+C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\P0\ProyectoFinalFNAF.cpp(279,20): warning C4244:         with
+C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\P0\ProyectoFinalFNAF.cpp(279,20): warning C4244:         [
+C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\P0\ProyectoFinalFNAF.cpp(279,20): warning C4244:             T=float
+C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\P0\ProyectoFinalFNAF.cpp(279,20): warning C4244:         ]
+C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\P0\ProyectoFinalFNAF.cpp(280,20): warning C4244: '=': conversión de 'double' a 'T'; posible pérdida de datos
+C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\P0\ProyectoFinalFNAF.cpp(280,20): warning C4244:         with
+C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\P0\ProyectoFinalFNAF.cpp(280,20): warning C4244:         [
+C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\P0\ProyectoFinalFNAF.cpp(280,20): warning C4244:             T=float
+C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\P0\ProyectoFinalFNAF.cpp(280,20): warning C4244:         ]
+C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\P0\ProyectoFinalFNAF.cpp(281,20): warning C4244: '=': conversión de 'double' a 'T'; posible pérdida de datos
+C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\P0\ProyectoFinalFNAF.cpp(281,20): warning C4244:         with
+C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\P0\ProyectoFinalFNAF.cpp(281,20): warning C4244:         [
+C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\P0\ProyectoFinalFNAF.cpp(281,20): warning C4244:             T=float
+C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\P0\ProyectoFinalFNAF.cpp(281,20): warning C4244:         ]
+C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\P0\ProyectoFinalFNAF.cpp(621,11): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\P0\ProyectoFinalFNAF.cpp(622,11): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\P0\ProyectoFinalFNAF.cpp(626,18): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\P0\ProyectoFinalFNAF.cpp(627,18): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\P0\ProyectoFinalFNAF.cpp(629,10): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\P0\ProyectoFinalFNAF.cpp(630,10): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+  P0.vcxproj -> C:\Users\beren\Documents\GDLB\Computación Gráfica\Laboratorio\Practicas\Practica00\P0\Debug\P0.exe
