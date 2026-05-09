@@ -53,49 +53,49 @@ glm::vec3 pointLightPositions[] = {
 };
 
 float vertices[] = {
-	 -0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
-		0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
-		0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
-		0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
-	   -0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
-	   -0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
+	// posiciones           // normales           // textura
+	-0.5f,-0.5f,-0.5f,      0.0f, 0.0f,-1.0f,     0.0f, 0.0f,
+	 0.5f,-0.5f,-0.5f,      0.0f, 0.0f,-1.0f,     1.0f, 0.0f,
+	 0.5f, 0.5f,-0.5f,      0.0f, 0.0f,-1.0f,     1.0f, 1.0f,
+	 0.5f, 0.5f,-0.5f,      0.0f, 0.0f,-1.0f,     1.0f, 1.0f,
+	-0.5f, 0.5f,-0.5f,      0.0f, 0.0f,-1.0f,     0.0f, 1.0f,
+	-0.5f,-0.5f,-0.5f,      0.0f, 0.0f,-1.0f,     0.0f, 0.0f,
 
-	   -0.5f, -0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
-		0.5f, -0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
-		0.5f,  0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
-		0.5f,  0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
-	   -0.5f,  0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
-	   -0.5f, -0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
+	-0.5f,-0.5f, 0.5f,      0.0f, 0.0f, 1.0f,     0.0f, 0.0f,
+	 0.5f,-0.5f, 0.5f,      0.0f, 0.0f, 1.0f,     1.0f, 0.0f,
+	 0.5f, 0.5f, 0.5f,      0.0f, 0.0f, 1.0f,     1.0f, 1.0f,
+	 0.5f, 0.5f, 0.5f,      0.0f, 0.0f, 1.0f,     1.0f, 1.0f,
+	-0.5f, 0.5f, 0.5f,      0.0f, 0.0f, 1.0f,     0.0f, 1.0f,
+	-0.5f,-0.5f, 0.5f,      0.0f, 0.0f, 1.0f,     0.0f, 0.0f,
 
-	   -0.5f,  0.5f,  0.5f, -1.0f,  0.0f,  0.0f,
-	   -0.5f,  0.5f, -0.5f, -1.0f,  0.0f,  0.0f,
-	   -0.5f, -0.5f, -0.5f, -1.0f,  0.0f,  0.0f,
-	   -0.5f, -0.5f, -0.5f, -1.0f,  0.0f,  0.0f,
-	   -0.5f, -0.5f,  0.5f, -1.0f,  0.0f,  0.0f,
-	   -0.5f,  0.5f,  0.5f, -1.0f,  0.0f,  0.0f,
+	-0.5f, 0.5f, 0.5f,     -1.0f, 0.0f, 0.0f,     1.0f, 0.0f,
+	-0.5f, 0.5f,-0.5f,     -1.0f, 0.0f, 0.0f,     1.0f, 1.0f,
+	-0.5f,-0.5f,-0.5f,     -1.0f, 0.0f, 0.0f,     0.0f, 1.0f,
+	-0.5f,-0.5f,-0.5f,     -1.0f, 0.0f, 0.0f,     0.0f, 1.0f,
+	-0.5f,-0.5f, 0.5f,     -1.0f, 0.0f, 0.0f,     0.0f, 0.0f,
+	-0.5f, 0.5f, 0.5f,     -1.0f, 0.0f, 0.0f,     1.0f, 0.0f,
 
-		0.5f,  0.5f,  0.5f,  1.0f,  0.0f,  0.0f,
-		0.5f,  0.5f, -0.5f,  1.0f,  0.0f,  0.0f,
-		0.5f, -0.5f, -0.5f,  1.0f,  0.0f,  0.0f,
-		0.5f, -0.5f, -0.5f,  1.0f,  0.0f,  0.0f,
-		0.5f, -0.5f,  0.5f,  1.0f,  0.0f,  0.0f,
-		0.5f,  0.5f,  0.5f,  1.0f,  0.0f,  0.0f,
+	 0.5f, 0.5f, 0.5f,      1.0f, 0.0f, 0.0f,     1.0f, 0.0f,
+	 0.5f, 0.5f,-0.5f,      1.0f, 0.0f, 0.0f,     1.0f, 1.0f,
+	 0.5f,-0.5f,-0.5f,      1.0f, 0.0f, 0.0f,     0.0f, 1.0f,
+	 0.5f,-0.5f,-0.5f,      1.0f, 0.0f, 0.0f,     0.0f, 1.0f,
+	 0.5f,-0.5f, 0.5f,      1.0f, 0.0f, 0.0f,     0.0f, 0.0f,
+	 0.5f, 0.5f, 0.5f,      1.0f, 0.0f, 0.0f,     1.0f, 0.0f,
 
-	   -0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,
-		0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,
-		0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,
-		0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,
-	   -0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,
-	   -0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,
+	-0.5f,-0.5f,-0.5f,      0.0f,-1.0f, 0.0f,     0.0f, 1.0f,
+	 0.5f,-0.5f,-0.5f,      0.0f,-1.0f, 0.0f,     1.0f, 1.0f,
+	 0.5f,-0.5f, 0.5f,      0.0f,-1.0f, 0.0f,     1.0f, 0.0f,
+	 0.5f,-0.5f, 0.5f,      0.0f,-1.0f, 0.0f,     1.0f, 0.0f,
+	-0.5f,-0.5f, 0.5f,      0.0f,-1.0f, 0.0f,     0.0f, 0.0f,
+	-0.5f,-0.5f,-0.5f,      0.0f,-1.0f, 0.0f,     0.0f, 1.0f,
 
-	   -0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,
-		0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,
-		0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,
-		0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,
-	   -0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,
-	   -0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f
+	-0.5f, 0.5f,-0.5f,      0.0f, 1.0f, 0.0f,     0.0f, 1.0f,
+	 0.5f, 0.5f,-0.5f,      0.0f, 1.0f, 0.0f,     1.0f, 1.0f,
+	 0.5f, 0.5f, 0.5f,      0.0f, 1.0f, 0.0f,     1.0f, 0.0f,
+	 0.5f, 0.5f, 0.5f,      0.0f, 1.0f, 0.0f,     1.0f, 0.0f,
+	-0.5f, 0.5f, 0.5f,      0.0f, 1.0f, 0.0f,     0.0f, 0.0f,
+	-0.5f, 0.5f,-0.5f,      0.0f, 1.0f, 0.0f,     0.0f, 1.0f
 };
-
 
 
 glm::vec3 Light1 = glm::vec3(0);
@@ -185,19 +185,19 @@ int main()
 	Shader lampShader("Shader/lamp.vs", "Shader/lamp.frag");
 
 	//models
-	//Model ModelosIntegrados((char*)"Models/mdlMapa.obj");
-	//Model Sol((char*)"Models/mdlSol.obj");
-	//Model Nube((char*)"Models/mdlNube.obj");
-	//Model Bocina((char*)"Models/mdlBocina.obj");
-	//Model Pelota((char*)"Models/mdlPelota.obj");
-	//Model Globos((char*)"Models/mdlGlobos.obj");
-	//Model Sillas((char*)"Models/mdlSillas.obj");
-	//Model Vaso((char*)"Models/mdlVaso.obj");
-	//Model PuertaDerecha((char*)"Models/mdlPuertaDerecha.obj");
-	//Model PuertaIzquierda((char*)"Models/mdlPuertaIzquierda.obj");
-	//Model Ventilador((char*)"Models/mdlVentilador.obj");
-	//Model Aspas((char*)"Models/mdlAspas.obj");
-	//Model Animatronicos((char*)"Models/mdlAnimatronicos.obj");
+	Model ModelosIntegrados((char*)"Models/mdlMapa.obj");
+	Model Sol((char*)"Models/mdlSol.obj");
+	Model Nube((char*)"Models/mdlNube.obj");
+	Model Bocina((char*)"Models/mdlBocina.obj");
+	Model Pelota((char*)"Models/mdlPelota.obj");
+	Model Globos((char*)"Models/mdlGlobos.obj");
+	Model Sillas((char*)"Models/mdlSillas.obj");
+	Model Vaso((char*)"Models/mdlVaso.obj");
+	Model PuertaDerecha((char*)"Models/mdlPuertaDerecha.obj");
+	Model PuertaIzquierda((char*)"Models/mdlPuertaIzquierda.obj");
+	Model Ventilador((char*)"Models/mdlVentilador.obj");
+	Model Aspas((char*)"Models/mdlAspas.obj");
+	Model Animatronicos((char*)"Models/mdlAnimatronicos.obj");
 
 	//models Personaje Puppet
 	Model CabezaP((char*)"Models/mdlCabezaP.obj");
@@ -223,12 +223,79 @@ int main()
 	glBindVertexArray(VAO);
 	glBindBuffer(GL_ARRAY_BUFFER, VBO);
 	glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+
+	//===============CUBO SIN TEXTURA===============
+	//// Position attribute
+	//glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GLfloat), (GLvoid*)0);
+	//glEnableVertexAttribArray(0);
+	//// normal attribute
+	//glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3 * sizeof(float)));
+	//glEnableVertexAttribArray(1);
+
+	//===============CUBO CON TEXTURA===============
 	// Position attribute
-	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GLfloat), (GLvoid*)0);
+	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(GLfloat), (GLvoid*)0);
 	glEnableVertexAttribArray(0);
-	// normal attribute
-	glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3 * sizeof(float)));
+	// Normal attribute
+	glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(GLfloat), (GLvoid*)(3 * sizeof(GLfloat)));
 	glEnableVertexAttribArray(1);
+	// Texture coordinate attribute
+	glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(GLfloat), (GLvoid*)(6 * sizeof(GLfloat)));
+	glEnableVertexAttribArray(2);
+
+	GLuint cubeTextures[17];
+	const char* textureFiles[17] = {
+	"Models/pizza1.jpg",
+	"Models/pizza2.jpg",
+	"Models/pizza3.jpg",
+	"Models/pizza4.jpg",
+
+	"Models/cajaPizza1.jpg",
+	"Models/cajaPizza2.jpg",
+	"Models/cajaPizza3.jpg",
+
+	"Models/regalo1.jpg",
+	"Models/regalo2.jpg",
+	"Models/regalo3.jpg",
+	"Models/regalo4.jpg",
+	"Models/regalo5.jpg",
+	"Models/regalo6.jpg",
+
+	"Models/hoja.jpg",
+	"Models/pelos.jpg",
+	"Models/poster1.jpg",
+	"Models/pantalla.png"
+	};
+
+	for (int i = 0; i < 17; i++)
+	{
+		cubeTextures[i] = SOIL_load_OGL_texture(
+			textureFiles[i],
+			SOIL_LOAD_AUTO,
+			SOIL_CREATE_NEW_ID,
+			SOIL_FLAG_MIPMAPS | SOIL_FLAG_INVERT_Y
+		);
+		if (cubeTextures[i] == 0)
+		{
+			std::cout << "Error al cargar textura: [" << i << "]:" << textureFiles[i] << std::endl;
+			continue;
+		}
+		else 
+		{
+			std::cout << "Textura cargada: " << textureFiles[i] << std::endl;
+		}
+
+		glBindTexture(GL_TEXTURE_2D, cubeTextures[i]);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+	}
+	glBindTexture(GL_TEXTURE_2D, 0);
+
+	//===============
+
+
 
 	// Set texture units
 	lightingShader.Use();
@@ -331,84 +398,84 @@ int main()
 
 
 		//Carga de modelo 
-		////Mapa
-		//model = glm::mat4(1);
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
-		//ModelosIntegrados.Draw(lightingShader);
-		////Sol
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(0.0f, movSol, 0.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
-		//Sol.Draw(lightingShader);
-		////Nube
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(0.0f, -movSol, 0.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
-		//Nube.Draw(lightingShader);
-		////Bocina
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
-		//Bocina.Draw(lightingShader);
-		//////Pelota
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(0.0f, movPelota, 0.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
-		//Pelota.Draw(lightingShader);
-		////Globos
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
-		//Globos.Draw(lightingShader);	
-		////Sillas
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
-		//Sillas.Draw(lightingShader);
-		////Vaso
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
-		//Vaso.Draw(lightingShader);
-		////PuertaDerecha
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(0.0f, 0.0f, movPuertaD));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
-		//PuertaDerecha.Draw(lightingShader);
-		////PuertaIzquierda
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(0.0f, 0.0f, movPuertaI));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
-		//PuertaIzquierda.Draw(lightingShader);
-		////Ventilador
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
-		//Ventilador.Draw(lightingShader);
-		////Aspas
-		//model = glm::mat4(1);
+		//Mapa
+		model = glm::mat4(1);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
+		ModelosIntegrados.Draw(lightingShader);
+		//Sol
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(0.0f, movSol, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
+		Sol.Draw(lightingShader);
+		//Nube
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(0.0f, -movSol, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
+		Nube.Draw(lightingShader);
+		//Bocina
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
+		Bocina.Draw(lightingShader);
+		////Pelota
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(0.0f, movPelota, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
+		Pelota.Draw(lightingShader);
+		//Globos
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
+		Globos.Draw(lightingShader);	
+		//Sillas
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
+		Sillas.Draw(lightingShader);
+		//Vaso
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
+		Vaso.Draw(lightingShader);
+		//PuertaDerecha
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(0.0f, 0.0f, movPuertaD));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
+		PuertaDerecha.Draw(lightingShader);
+		//PuertaIzquierda
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(0.0f, 0.0f, movPuertaI));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
+		PuertaIzquierda.Draw(lightingShader);
+		//Ventilador
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
+		Ventilador.Draw(lightingShader);
+		//Aspas
+		model = glm::mat4(1);
 		//model = glm::rotate(model, glm::radians(rotAspas), glm::vec3(0.0f, 0.0f, 1.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
-		//Aspas.Draw(lightingShader);
-		////Animatronicos
-		//model = glm::mat4(1);
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
-		//Animatronicos.Draw(lightingShader);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
+		Aspas.Draw(lightingShader);
+		//Animatronicos
+		model = glm::mat4(1);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
+		Animatronicos.Draw(lightingShader);
 
 		//Carga de modelo personaje Puppet
 		glm::mat4 modelPuppet = glm::mat4(1);
@@ -526,12 +593,113 @@ int main()
 		// Set matrices
 		glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
 		glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection));
+
+		////CUBO1 ===========================
+		//model = glm::mat4(1);
+		//model = glm::translate(model, glm::vec3(0.2f, 0.0f, 0.0f)); //posicion
+		//model = glm::scale(model, glm::vec3(3.0f));
+		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		//glBindVertexArray(VAO);
+		//glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//glBindVertexArray(0);
+
+		// =====================================
+		// 7 CUBOS HECHOS CON GEOMETRÍA OPENGL
+		// =====================================
+
+		// Posiciones de los cubos
+		glm::vec3 cubePositions[] = {
+			glm::vec3(-4.5f,  2.7f, 3.5f),
+			glm::vec3(4.7f,  2.7f, 3.5f),
+			glm::vec3(-3.8f,  2.7f, -6.65f),
+			glm::vec3(10.5f,  2.7f, -6.65f),
+
+			glm::vec3(-4.5f, 1.1f,  9.3f), //YA QUEDÓ
+			glm::vec3(-4.5f, 0.8f,  9.3f), //YA QUEDÓ
+			glm::vec3(-4.5f, 0.5f,  9.3f), //YA QUEDÓ
+
+			glm::vec3(12.5f,  3.0f,  2.8f), //YA QUEDÓ
+			glm::vec3(12.0f,  3.0f,  -5.1f), //YA QUEDÓ
+			glm::vec3(3.2f,  3.0f,  2.8f), //Medio 
+			glm::vec3(3.2f,  3.0f,  -5.1f), //YA QUEDÓ
+			glm::vec3(-3.0f,  3.0f,  2.8f), //YA QUEDÓ
+			glm::vec3(-4.5f,  3.0f,  -5.1f), //YA QUEDÓ
+
+			glm::vec3(0.0f,  3.0f,  2.0f),
+			glm::vec3(3.5f,  0.3f, 17.0f),
+			glm::vec3(-8.5f, 4.5f, -6.0f), //YA QUEDÓ
+			glm::vec3(16.5f,  4.0f,  0.0f) //YA QUEDÓ
+			// x z y
+		};
+
+		// Escalas de cada cubo
+		glm::vec3 cubeScales[] = {
+			glm::vec3(0.5f, 0.04f, 0.8f), // pizza
+			glm::vec3(0.5f, 0.04f, 0.8f), // pizza
+			glm::vec3(0.5f, 0.04f, 0.8f), // pizza
+			glm::vec3(0.5f, 0.04f, 0.8f), // pizza
+
+			glm::vec3(3.0f, 0.35f, 2.0f), // cajaPizza
+			glm::vec3(2.0f, 0.35f, 3.0f), // cajaPizza
+			glm::vec3(3.0f, 0.35f, 2.0f), // cajaPizza
+
+
+			glm::vec3(0.7f, 0.7f, 0.7f), // regalo
+			glm::vec3(0.7f, 0.7f, 0.7f), // regalo
+			glm::vec3(0.7f, 0.7f, 0.7f), // regalo
+			glm::vec3(0.7f, 0.7f, 0.7f), // regalo
+			glm::vec3(0.7f, 0.7f, 0.7f), // regalo
+			glm::vec3(0.7f, 0.7f, 0.7f), // regalo
+
+			glm::vec3(0.5f, 0.03f, 0.4f), // hoja
+			glm::vec3(3.0f, 0.05f, 1.5f), // tapete
+			glm::vec3(0.05f, 2.0f, 3.0f), // poster
+			glm::vec3(0.30f, 3.4f, 6.0f)  // pantalla
+			// x y z
+		};
+
+		// Dibujar los 7 cubos
+		for (GLuint i = 0; i < 17; i++)
+		{
+			model = glm::mat4(1);
+
+			// Posición
+			model = glm::translate(model, cubePositions[i]);
+
+			// Escala
+			model = glm::scale(model, cubeScales[i]);
+
+			glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+
+			// Enviar color al shader
+			/*GLuint colorLoc = glGetUniformLocation(lampShader.Program, "objectColor");
+			glUniform3fv(colorLoc, 1, glm::value_ptr(cubeColors[i]));
+
+			glBindVertexArray(VAO);*/
+
+			//ACTIVAR TEXTURA
+
+			glActiveTexture(GL_TEXTURE0);
+			glBindTexture(GL_TEXTURE_2D, cubeTextures[i]);
+			glUniform1i(glGetUniformLocation(lampShader.Program, "texture1"), 0);
+
+			glBindVertexArray(VAO);
+			glDrawArrays(GL_TRIANGLES, 0, 36);
+		}
+
+		glBindVertexArray(0);
+
+
+		//dibujar otra cosa
 		model = glm::mat4(1);
 		model = glm::translate(model, lightPos);
 		model = glm::scale(model, glm::vec3(0.2f)); // Make it a smaller cube
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		// Draw the light object (using light's vertex attributes)
 
+
+		//Dibujar el objeto de luz 
 		model = glm::mat4(1);
 		model = glm::translate(model, pointLightPositions[0]);
 		model = glm::scale(model, glm::vec3(0.2f)); // Make it a smaller cube
