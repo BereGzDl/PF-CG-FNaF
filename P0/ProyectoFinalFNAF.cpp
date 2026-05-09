@@ -187,35 +187,35 @@ int main()
 	//models
 	Model ModelosIntegrados((char*)"Models/mdlMapa.obj");
 	Model Techo((char*)"Models/mdlTecho.obj");
-	//Model Sol((char*)"Models/mdlSol.obj");
-	//Model Nube((char*)"Models/mdlNube.obj");
-	//Model Bocina((char*)"Models/mdlBocina.obj");
-	//Model Pelota((char*)"Models/mdlPelota.obj");
-	//Model Globos((char*)"Models/mdlGlobos.obj");
-	//Model Sillas((char*)"Models/mdlSillas.obj");
-	//Model Vaso((char*)"Models/mdlVaso.obj");
-	//Model PuertaDerecha((char*)"Models/mdlPuertaDerecha.obj");
-	//Model PuertaIzquierda((char*)"Models/mdlPuertaIzquierda.obj");
-	//Model Ventilador((char*)"Models/mdlVentilador.obj");
-	//Model Aspas((char*)"Models/mdlAspas.obj");
-	//Model Animatronicos((char*)"Models/mdlAnimatronicos.obj");
+	Model Sol((char*)"Models/mdlSol.obj");
+	Model Nube((char*)"Models/mdlNube.obj");
+	Model Bocina((char*)"Models/mdlBocina.obj");
+	Model Pelota((char*)"Models/mdlPelota.obj");
+	Model Globos((char*)"Models/mdlGlobos.obj");
+	Model Sillas((char*)"Models/mdlSillas.obj");
+	Model Vaso((char*)"Models/mdlVaso.obj");
+	Model PuertaDerecha((char*)"Models/mdlPuertaDerecha.obj");
+	Model PuertaIzquierda((char*)"Models/mdlPuertaIzquierda.obj");
+	Model Ventilador((char*)"Models/mdlVentilador.obj");
+	Model Aspas((char*)"Models/mdlAspas.obj");
+	Model Animatronicos((char*)"Models/mdlAnimatronicos.obj");
 
 	//models Personaje Puppet
-	//Model CabezaP((char*)"Models/mdlCabezaP.obj");
-	//Model CuelloP((char*)"Models/mdlCuelloP.obj");
-	//Model CuerpoP((char*)"Models/mdlCuerpoP.obj");
-	//Model ManoDerechaP((char*)"Models/mdlManoDerechaP.obj");
-	//Model ManoIzquierdaP((char*)"Models/mdlManoIzquierdaP.obj");
-	//Model PieDerechoP((char*)"Models/mdlPieDerechoP.obj");
-	//Model PieIzquierdoP((char*)"Models/mdlPieIzquierdoP.obj");
+	Model CabezaP((char*)"Models/mdlCabezaP.obj");
+	Model CuelloP((char*)"Models/mdlCuelloP.obj");
+	Model CuerpoP((char*)"Models/mdlCuerpoP.obj");
+	Model ManoDerechaP((char*)"Models/mdlManoDerechaP.obj");
+	Model ManoIzquierdaP((char*)"Models/mdlManoIzquierdaP.obj");
+	Model PieDerechoP((char*)"Models/mdlPieDerechoP.obj");
+	Model PieIzquierdoP((char*)"Models/mdlPieIzquierdoP.obj");
 
-	////models Personaje Chica
-	//Model CabezaC((char*)"Models/mdlCabezaC.obj");
-	//Model CuerpoC((char*)"Models/mdlCuerpoC.obj");
-	//Model ManoDerechaC((char*)"Models/mdlManoDerechaC.obj");
-	//Model ManoIzquierdaC((char*)"Models/mdlManoIzquierdaC.obj");
-	//Model PieDerechoC((char*)"Models/mdlPieDerechoC.obj");
-	//Model PieIzquierdoC((char*)"Models/mdlPieIzquierdoC.obj");
+	//models Personaje Chica
+	Model CabezaC((char*)"Models/mdlCabezaC.obj");
+	Model CuerpoC((char*)"Models/mdlCuerpoC.obj");
+	Model ManoDerechaC((char*)"Models/mdlManoDerechaC.obj");
+	Model ManoIzquierdaC((char*)"Models/mdlManoIzquierdaC.obj");
+	Model PieDerechoC((char*)"Models/mdlPieDerechoC.obj");
+	Model PieIzquierdoC((char*)"Models/mdlPieIzquierdoC.obj");
 
 	// First, set the container's VAO (and VBO)
 	GLuint VBO, VAO;
@@ -439,171 +439,156 @@ int main()
 		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
 		Techo.Draw(lightingShader);
-		////Sol
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(0.0f, movSol, 0.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
-		//Sol.Draw(lightingShader);
-		////Nube
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(0.0f, -movSol, 0.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
-		//Nube.Draw(lightingShader);
-		////Bocina
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
-		//Bocina.Draw(lightingShader);
-		//////Pelota
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(0.0f, movPelota, 0.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
-		//Pelota.Draw(lightingShader);
-		////Globos
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
-		//Globos.Draw(lightingShader);	
-		////Sillas
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
-		//Sillas.Draw(lightingShader);
-		////Vaso
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
-		//Vaso.Draw(lightingShader);
-		////PuertaDerecha
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(0.0f, 0.0f, movPuertaD));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
-		//PuertaDerecha.Draw(lightingShader);
-		////PuertaIzquierda
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(0.0f, 0.0f, movPuertaI));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
-		//PuertaIzquierda.Draw(lightingShader);
-		////Ventilador
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
-		//Ventilador.Draw(lightingShader);
-		////Aspas
-		//model = glm::mat4(1);
-		////model = glm::rotate(model, glm::radians(rotAspas), glm::vec3(0.0f, 0.0f, 1.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
-		//Aspas.Draw(lightingShader);
-		////Animatronicos
-		//model = glm::mat4(1);
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
-		//Animatronicos.Draw(lightingShader);
+		//Sol
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(0.0f, movSol, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
+		Sol.Draw(lightingShader);
+		//Nube
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(0.0f, -movSol, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
+		Nube.Draw(lightingShader);
+		//Bocina
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
+		Bocina.Draw(lightingShader);
+		////Pelota
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(0.0f, movPelota, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
+		Pelota.Draw(lightingShader);
+		//Globos
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
+		Globos.Draw(lightingShader);	
+		//Sillas
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
+		Sillas.Draw(lightingShader);
+		//Vaso
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
+		Vaso.Draw(lightingShader);
+		//PuertaDerecha
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(0.0f, 0.0f, movPuertaD));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
+		PuertaDerecha.Draw(lightingShader);
+		//PuertaIzquierda
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(0.0f, 0.0f, movPuertaI));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
+		PuertaIzquierda.Draw(lightingShader);
+		//Ventilador
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
+		Ventilador.Draw(lightingShader);
+		//Aspas
+		model = glm::mat4(1);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
+		Aspas.Draw(lightingShader);
+		//Animatronicos
+		model = glm::mat4(1);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
+		Animatronicos.Draw(lightingShader);
 
-		////Carga de modelo personaje Puppet
-		//glm::mat4 modelPuppet = glm::mat4(1);
-		//modelPuppet = glm::translate(modelPuppet, glm::vec3(movPuppet, 0.0f, 0.0f));
-		////CuerpoP
-		//model = modelPuppet;
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
-		//CuerpoP.Draw(lightingShader);
-		////CuelloP
-		//model = modelPuppet;
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
-		//CuelloP.Draw(lightingShader);
-		////CabezaP
-		//model = modelPuppet;
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
-		//CabezaP.Draw(lightingShader);
-		////ManoIzquierdaP
-		//model = modelPuppet;
-		////model = glm::translate(model,glm::vec3(0.5f, 0.5f, 0.0f));// ir al hombro izquierdo
-		//model = glm::rotate(model, glm::radians(rotBrazoIzqP), glm::vec3(0.0f, 0.0f, 1.0f)); // rotar brazo
-		////model = glm::translate(model,glm::vec3(-0.5f, -0.5f, 0.0f)); // regresar
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//ManoIzquierdaP.Draw(lightingShader);
-		////ManoDerechaP
-		//model = modelPuppet;
-		////model = glm::translate(model,glm::vec3(-0.5f, 0.5f, 0.0f)); // punto donde nace el brazo
-		//model = glm::rotate(model, glm::radians(rotBrazoDerP), glm::vec3(0.0f, 0.0f, 1.0f)); // rotación del brazo
-		////model = glm::translate(model,glm::vec3(0.5f, -0.5f, 0.0f));// regresar
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//ManoDerechaP.Draw(lightingShader);
-		////PieIzquierdoP
-		//model = modelPuppet;
-		////model = glm::translate(model,glm::vec3(0.3f, -0.8f, 0.0f)); // ir a la cadera/pierna
-		//model = glm::rotate(model, glm::radians(rotPiernaIzqP), glm::vec3(0.0f, 0.0f, 1.0f)); 		// rotar pierna
-		////model = glm::translate(model,glm::vec3(-0.3f, 0.8f, 0.0f)); 		// regresar
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//PieIzquierdoP.Draw(lightingShader);
-		////PieDerechoP
-		//model = modelPuppet;
-		////model = glm::translate(model,glm::vec3(-0.3f, -0.8f, 0.0f)); 	// ir a la cadera/pierna
-		//model = glm::rotate(model, glm::radians(rotPiernaDerP), glm::vec3(0.0f, 0.0f, 1.0f)); 		// rotar pierna
-		////model = glm::translate(model,glm::vec3(0.3f, 0.8f, 0.0f)); 		// regresar
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//PieDerechoP.Draw(lightingShader);
+		//Carga de modelo personaje Puppet
+		glm::mat4 modelPuppet = glm::mat4(1);
+		modelPuppet = glm::translate(modelPuppet, glm::vec3(movPuppet, 0.0f, 0.0f));
+		//CuerpoP
+		model = modelPuppet;
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
+		CuerpoP.Draw(lightingShader);
+		//CuelloP
+		model = modelPuppet;
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
+		CuelloP.Draw(lightingShader);
+		//CabezaP
+		model = modelPuppet;
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
+		CabezaP.Draw(lightingShader);
+		//ManoIzquierdaP
+		model = modelPuppet;
+		model = glm::rotate(model, glm::radians(rotBrazoIzqP), glm::vec3(0.0f, 0.0f, 1.0f)); // rotar brazo
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		ManoIzquierdaP.Draw(lightingShader);
+		//ManoDerechaP
+		model = modelPuppet;
+		model = glm::rotate(model, glm::radians(rotBrazoDerP), glm::vec3(0.0f, 0.0f, 1.0f)); // rotación del brazo
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		ManoDerechaP.Draw(lightingShader);
+		//PieIzquierdoP
+		model = modelPuppet;
+		model = glm::rotate(model, glm::radians(rotPiernaIzqP), glm::vec3(0.0f, 0.0f, 1.0f)); 		// rotar pierna
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		PieIzquierdoP.Draw(lightingShader);
+		//PieDerechoP
+		model = modelPuppet;
+		model = glm::rotate(model, glm::radians(rotPiernaDerP), glm::vec3(0.0f, 0.0f, 1.0f)); 		// rotar pierna
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		PieDerechoP.Draw(lightingShader);
 
-		////Carga de modelo personaje Chica
-		//glm::mat4 modelChica = glm::mat4(1);
-		//modelChica = glm::translate(modelChica, glm::vec3(0.0f, 0.0f, 0.0f));
-		////CuerpoC
-		//model = modelChica;
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
-		//CuerpoC.Draw(lightingShader);
-		////CabezaC
-		//model = modelChica;
-		////model = glm::translate(model, glm::vec3(0.0f, 1.0f, 0.0f)); // mover al punto de giro
-		//model = glm::rotate(model,glm::radians(rotCabezaC),glm::vec3(0.0f, 0.0f, 1.0f)); // rotar cabeza
-		////model = glm::translate(model, glm::vec3(0.0f, -1.0f, 0.0f)); // regresar
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
-		//CabezaC.Draw(lightingShader);
-		////ManoIzquierdaC
-		//model = modelChica;
-		////model = glm::translate(model, glm::vec3(-0.5f, 0.5f, 0.0f));// ir al hombro
-		//model = glm::rotate(model,glm::radians(rotBrazoIzqC),glm::vec3(0.0f, 0.0f, 1.0f));// rotar brazo
-		////model = glm::translate(model, glm::vec3(0.5f, -0.5f, 0.0f));// regresar
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
-		//ManoIzquierdaC.Draw(lightingShader);
-		////ManoDerechaC
-		//model = modelChica;
-		////model = glm::translate(model, glm::vec3(0.5f, 0.5f, 0.0f)); // ir al hombro
-		//model = glm::rotate(model,glm::radians(rotBrazoDerC),glm::vec3(0.0f, 0.0f, 1.0f));	// rotar brazo
-		////model = glm::translate(model, glm::vec3(-0.5f, -0.5f, 0.0f)); // regresar
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//ManoDerechaC.Draw(lightingShader);
-		////PieIzquierdoC
-		//model = modelChica;
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
-		//PieIzquierdoC.Draw(lightingShader);
-		////PieDerechoC
-		//model = modelChica;
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
-		//PieDerechoC.Draw(lightingShader);
+		//Carga de modelo personaje Chica
+		glm::mat4 modelChica = glm::mat4(1);
+		modelChica = glm::translate(modelChica, glm::vec3(0.0f, 0.0f, 0.0f));
+		//CuerpoC
+		model = modelChica;
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
+		CuerpoC.Draw(lightingShader);
+		//CabezaC
+		model = modelChica;
+		model = glm::rotate(model,glm::radians(rotCabezaC),glm::vec3(0.0f, 0.0f, 1.0f)); // rotar cabeza
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
+		CabezaC.Draw(lightingShader);
+		//ManoIzquierdaC
+		model = modelChica;
+		model = glm::rotate(model,glm::radians(rotBrazoIzqC),glm::vec3(0.0f, 0.0f, 1.0f));// rotar brazor
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
+		ManoIzquierdaC.Draw(lightingShader);
+		//ManoDerechaC
+		model = modelChica;
+		model = glm::rotate(model,glm::radians(rotBrazoDerC),glm::vec3(0.0f, 0.0f, 1.0f));	// rotar brazo
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		ManoDerechaC.Draw(lightingShader);
+		//PieIzquierdoC
+		model = modelChica;
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
+		PieIzquierdoC.Draw(lightingShader);
+		//PieDerechoC
+		model = modelChica;
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
+		PieDerechoC.Draw(lightingShader);
 
 
 		// Also draw the lamp object, again binding the appropriate shader
