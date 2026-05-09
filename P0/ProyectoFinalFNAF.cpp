@@ -101,10 +101,6 @@ float vertices[] = {
 glm::vec3 Light1 = glm::vec3(0);
 
 //Anim Basicas
-////Ejemplo
-//float rotBall = 0;
-//bool AnimBall = false;
-//bool step = false;
 //Sol y Nube
 float movSol = 0;
 bool AnimSol = true;
@@ -120,11 +116,17 @@ bool AnimPuertaD = false;
 //PuertaIzquierda
 float movPuertaI = 0;
 bool AnimPuertaI = false;
-//Anim Complejas
-////Personaje Puppet
-//bool AnimBall = false;
-////Personaje Bunnie
-//bool AnimBall = false;
+////Anim Complejas
+//////Personaje Puppet
+//float movPuppet = 0.0f;
+//float rotBrazoDerP = 0.0f;
+//float rotBrazoIzqP = 0.0f;
+//float rotPiernaDerP = 0.0f;
+//float rotPiernaIzqP = 0.0f;
+//bool AnimPuppet = false;
+//bool adelante = true;
+//////Personaje Chica
+////bool AnimBall = false;
 
 
 // Deltatime
@@ -196,22 +198,22 @@ int main()
 	Model Aspas((char*)"Models/mdlAspas.obj");
 	Model Animatronicos((char*)"Models/mdlAnimatronicos.obj");
 
-	//models Personaje Puppet
-	Model CabezaP((char*)"Models/mdlCabezaP.obj");
-	Model CuelloP((char*)"Models/mdlCuelloP.obj");
-	Model CuerpoP((char*)"Models/mdlCuerpoP.obj");
-	Model ManoDerechaP((char*)"Models/mdlManoDerechaP.obj");
-	Model ManoIzquierdaP((char*)"Models/mdlManoIzquierdaP.obj");
-	Model PieDerechoP((char*)"Models/mdlPieDerechoP.obj");
-	Model PieIzquierdoP((char*)"Models/mdlPieIzquierdoP.obj");
+	////models Personaje Puppet
+	//Model CabezaP((char*)"Models/mdlCabezaP.obj");
+	//Model CuelloP((char*)"Models/mdlCuelloP.obj");
+	//Model CuerpoP((char*)"Models/mdlCuerpoP.obj");
+	//Model ManoDerechaP((char*)"Models/mdlManoDerechaP.obj");
+	//Model ManoIzquierdaP((char*)"Models/mdlManoIzquierdaP.obj");
+	//Model PieDerechoP((char*)"Models/mdlPieDerechoP.obj");
+	//Model PieIzquierdoP((char*)"Models/mdlPieIzquierdoP.obj");
 
-	//models Personaje Bunnie
-	//Model CabezaB((char*)"Models/mdlCabezaB.obj");
-	//Model CuerpoB((char*)"Models/mdlCuerpoB.obj");
-	//Model ManoDerechaB((char*)"Models/mdlManoDerechaB.obj");
-	//Model ManoIzquierdaB((char*)"Models/mdlManoIzquierdaB.obj");
-	//Model PieDerechoB((char*)"Models/mdlPieDerechoB.obj");
-	//Model PieIzquierdoB((char*)"Models/mdlPieIzquierdoB.obj");
+	////models Personaje Chica
+	//Model CabezaC((char*)"Models/mdlCabezaC.obj");
+	//Model CuerpoC((char*)"Models/mdlCuerpoC.obj");
+	//Model ManoDerechaC((char*)"Models/mdlManoDerechaC.obj");
+	//Model ManoIzquierdaC((char*)"Models/mdlManoIzquierdaC.obj");
+	//Model PieDerechoC((char*)"Models/mdlPieDerechoC.obj");
+	//Model PieIzquierdoC((char*)"Models/mdlPieIzquierdoC.obj");
 
 	// First, set the container's VAO (and VBO)
 	GLuint VBO, VAO;
@@ -363,7 +365,7 @@ int main()
 		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
-		Globos.Draw(lightingShader);
+		Globos.Draw(lightingShader);	
 		//Sillas
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
@@ -407,24 +409,24 @@ int main()
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
 		Animatronicos.Draw(lightingShader);
 
-		////Carga de modelo personaje Puppet
+		//Carga de modelo personaje Puppet
+		//glm::mat4 modelPuppet = glm::mat4(1);
+		//modelPuppet = glm::translate(modelPuppet,glm::vec3(movPuppet, 0.0f, 0.0f));
 		////CuerpoP
-		//model = glm::mat4(1);
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
+		//model = modelPuppet;
+		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE,glm::value_ptr(model));
+		//glUniform1i(glGetUniformLocation(lightingShader.Program,"transparency"), 0);
 		//CuerpoP.Draw(lightingShader);
 		////CuelloP
-		//model = glm::mat4(1);
+		//model = modelPuppet;
 		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		//model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
 		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
 		//CuelloP.Draw(lightingShader);
 		////CabezaP
-		//model = glm::mat4(1);
+		//model = modelPuppet;
 		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		//model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
-		//model = glm::rotate(model, glm::radians(rotBall), glm::vec3(0.0f, 1.0f, 0.0f));
 		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
 		//CabezaP.Draw(lightingShader);
 		////ManoIzquierdaP
@@ -434,10 +436,11 @@ int main()
 		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
 		//ManoIzquierdaP.Draw(lightingShader);
 		////ManoDerechaP
-		//model = glm::mat4(1);
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
+		//model = modelPuppet;
+		//model = glm::translate(model,glm::vec3(-0.5f, 0.5f, 0.0f)); // punto donde nace el brazo
+		//model = glm::rotate(model,glm::radians(rotBrazoDerP),glm::vec3(0.0f, 0.0f, 0.0f)); // rotación del brazo
+		//model = glm::translate(model,glm::vec3(0.5f, -0.5f, 0.0f));// regresar
+		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE,glm::value_ptr(model));
 		//ManoDerechaP.Draw(lightingShader);
 		////PieIzquierdoP
 		//model = glm::mat4(1);
@@ -452,6 +455,43 @@ int main()
 		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
 		//PieDerechoP.Draw(lightingShader);
 
+		////Carga de modelo personaje Chica
+		//glm::mat4 modelChica = glm::mat4(1);
+		//modelChica = glm::translate(modelChica, glm::vec3(movPuppet, 0.0f, 0.0f));
+		////CuerpoP
+		//model = modelChica;
+		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
+		//CuerpoC.Draw(lightingShader);
+		////CabezaP
+		//model = modelChica;
+		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		//model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
+		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
+		//CabezaC.Draw(lightingShader);
+		////ManoIzquierdaC
+		//model = modelChica;
+		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		//model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
+		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
+		//ManoIzquierdaC.Draw(lightingShader);
+		////ManoDerechaP
+		//model = modelChica;
+		//model = glm::translate(model, glm::vec3(0.5f, -0.5f, 0.0f));
+		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		//ManoDerechaC.Draw(lightingShader);
+		////PieIzquierdoC
+		//model = modelChica;
+		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		//model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
+		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
+		//PieIzquierdoC.Draw(lightingShader);
+		////PieDerechoC
+		//model = modelChica;
+		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		//model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
+		//glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
+		//PieDerechoC.Draw(lightingShader);
 
 		//BASE PARA OTRAS FUNCIONES
 		//model = glm::mat4(1);
@@ -617,6 +657,11 @@ void KeyCallback(GLFWwindow* window, int key, int scancode, int action, int mode
 	{
 		AnimPuertaI = !AnimPuertaI;
 	}
+	////Activar Puppet
+	//if (key == GLFW_KEY_X && action == GLFW_PRESS)
+	//{
+	//	AnimPuppet = !AnimPuppet;
+	//}
 }
 void Animation() {
 	//Sol y Nubes
@@ -688,8 +733,39 @@ void Animation() {
 	{
 		movPuertaI -= 0.01f;
 	}
+	//	// Puppet caminando
+	//	if (AnimPuppet)
+	//	{
+	//		movPuppet += 0.01f;
+	//
+	//		if (adelante)
+	//		{
+	//			rotBrazoDerP += 1.0f;
+	//			rotBrazoIzqP -= 1.0f;
+	//
+	//			rotPiernaDerP -= 1.0f;
+	//			rotPiernaIzqP += 1.0f;
+	//		}
+	//		else
+	//		{
+	//			rotBrazoDerP -= 1.0f;
+	//			rotBrazoIzqP += 1.0f;
+	//
+	//			rotPiernaDerP += 1.0f;
+	//			rotPiernaIzqP -= 1.0f;
+	//		}
+	//
+	//		if (rotBrazoDerP >= 30.0f)
+	//		{
+	//			adelante = false;
+	//		}
+	//
+	//		if (rotBrazoDerP <= -30.0f)
+	//		{
+	//			adelante = true;
+	//		}
+	//	}
 }
-
 void MouseCallback(GLFWwindow* window, double xPos, double yPos)
 {
 	if (firstMouse)
