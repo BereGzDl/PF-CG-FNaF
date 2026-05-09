@@ -886,7 +886,11 @@ void Animation() {
 	// Puppet caminando
 	if (AnimPuppet)
 	{
-		movPuppet += 0.01f;
+		// límite del escenario
+		if (movPuppet < 5.0f)
+		{
+			movPuppet += 0.01f;
+		}
 
 		if (adelante)
 		{
