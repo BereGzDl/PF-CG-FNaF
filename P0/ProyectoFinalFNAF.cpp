@@ -261,7 +261,7 @@ int main()
 	"Models/regalo5.jpg",
 	"Models/regalo6.jpg",
 
-	"Models/hoja.jpg",
+	"Models/blanco.jpg",
 	"Models/pelos.jpg",
 	"Models/poster1.jpg",
 	"Models/pantalla.png"
@@ -626,7 +626,7 @@ int main()
 			glm::vec3(-3.0f,  3.0f,  2.8f), //YA QUEDÓ
 			glm::vec3(-4.5f,  3.0f,  -5.1f), //YA QUEDÓ
 
-			glm::vec3(0.0f,  3.0f,  2.0f),
+			glm::vec3(2.9f,  2.37f, 14.5f),
 			glm::vec3(3.5f,  0.3f, 17.0f),
 			glm::vec3(-8.5f, 4.5f, -6.0f), //YA QUEDÓ
 			glm::vec3(16.5f,  4.0f,  0.0f) //YA QUEDÓ
@@ -652,7 +652,7 @@ int main()
 			glm::vec3(0.7f, 0.7f, 0.7f), // regalo
 			glm::vec3(0.7f, 0.7f, 0.7f), // regalo
 
-			glm::vec3(0.5f, 0.03f, 0.4f), // hoja
+			glm::vec3(0.4f, 0.03f, 0.5f), // hoja
 			glm::vec3(3.0f, 0.05f, 1.5f), // tapete
 			glm::vec3(0.05f, 2.0f, 3.0f), // poster
 			glm::vec3(0.30f, 3.4f, 6.0f)  // pantalla
