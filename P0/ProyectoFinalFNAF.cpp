@@ -886,37 +886,38 @@ void Animation() {
 	// Puppet caminando
 	if (AnimPuppet)
 	{
-		// límite del escenario
-		if (movPuppet < 5.0f)
+		// mover solo hasta x = 20
+		if (movPuppet < 20.0f)
 		{
 			movPuppet += 0.01f;
-		}
 
-		if (adelante)
-		{
-			rotBrazoDerP += 0.01;
-			rotBrazoIzqP -= 0.01;
+			// animación de brazos y piernas
+			if (adelante)
+			{
+				rotBrazoDerP += 0.01f;
+				rotBrazoIzqP -= 0.01f;
 
-			rotPiernaDerP -= 0.01;
-			rotPiernaIzqP += 0.01;
-		}
-		else
-		{
-			rotBrazoDerP -= 0.01;
-			rotBrazoIzqP += 0.01;
+				rotPiernaDerP -= 0.01f;
+				rotPiernaIzqP += 0.01f;
+			}
+			else
+			{
+				rotBrazoDerP -= 0.01f;
+				rotBrazoIzqP += 0.01f;
 
-			rotPiernaDerP += 0.01;
-			rotPiernaIzqP -= 0.01;
-		}
+				rotPiernaDerP += 0.01f;
+				rotPiernaIzqP -= 0.01f;
+			}
 
-		if (rotBrazoDerP >= 2.0f)
-		{
-			adelante = false;
-		}
+			if (rotBrazoDerP >= 2.0f)
+			{
+				adelante = false;
+			}
 
-		if (rotBrazoDerP <= -2.0f)
-		{
-			adelante = true;
+			if (rotBrazoDerP <= -2.0f)
+			{
+				adelante = true;
+			}
 		}
 	}
 
