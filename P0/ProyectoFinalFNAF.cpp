@@ -245,7 +245,7 @@ int main()
 
 	"Models/cajaPizza1.jpg",
 	"Models/cajaPizza2.jpg",
-	"Models/cajaPizza3.jpg",
+	"Models/cajaPizza.jpg",
 
 	"Models/regalo1.jpg",
 	"Models/regalo2.jpg",
